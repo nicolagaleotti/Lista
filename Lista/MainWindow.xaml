@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Lista"
         mc:Ignorable="d"
         Title="MainWindow" Height="250" Width="800" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid Background="AntiqueWhite">
         <StackPanel>
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -29,10 +29,10 @@
                             <TextBox Name="txtTesto" Height="30" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
                         </StackPanel>
                         <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-                            <Button Name="btnAggiungi" Content="AGGIUNGI" Click="btnAggiungi_Click"/>
+                            <Button Name="btnAggiungi" Content="AGGIUNGI" FontWeight="Bold" Click="btnAggiungi_Click"/>
                         </StackPanel>
                         <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
-                            <Button Name="btnRimuovi" Content="RIMUOVI" Click="btnRimuovi_Click"/>
+                            <Button Name="btnRimuovi" Content="RIMUOVI" FontWeight="Bold" Click="btnRimuovi_Click"/>
                         </StackPanel>
                     </Grid>
                 </StackPanel>
@@ -50,10 +50,10 @@
                             <RowDefinition Height="100"/>
                         </Grid.RowDefinitions>
                     <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Button Name="btnConta" Content="CONTA NUMERI" Click="btnConta_Click"/>
+                            <Button Name="btnConta" Content="CONTA NUMERI" FontWeight="Bold" Click="btnConta_Click"/>
                     </StackPanel>
                     <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-                            <Label Content="" Name="lblConta" Height="30" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                            <ListBox Name="lbConta" Height="95" Width="120" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
                         </StackPanel>
                     </Grid>
                 </StackPanel>

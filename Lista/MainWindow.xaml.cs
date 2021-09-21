@@ -60,12 +60,12 @@ namespace Lista
 
         private void btnConta_Click(object sender, RoutedEventArgs e)
         {
-            List<string> numeri = new List<string>();
+            lbConta.Items.Clear();
             foreach (string s in lista)
             {
                 if (s.All(char.IsNumber))
                 {
-                    numeri.Add(s);
+                    lbConta.Items.Add(s);
                 }
             }
         }
